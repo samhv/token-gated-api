@@ -10,7 +10,11 @@ class PagesController < ApplicationController
 
   # GET /pages/1
   def show
-    render json: @page
+    if @page.has_access(params[:user_address], params[:signed_message])
+      render json: @page, show_description: true
+    else
+      render json: { error: 'Unauthorized' }, status: :unauthorized
+    end
   end
 
   # POST /pages
