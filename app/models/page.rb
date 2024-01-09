@@ -9,6 +9,6 @@ class Page < ApplicationRecord
         end
         
         def is_holder user_address
-            AlchemyAPI.is_holder_of_contract user_address, self.collection_address
+            AlchemyApi.is_holder_of_contract user_address, self.collection_address
         end
 end
