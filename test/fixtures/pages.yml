@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  owner_address: MyString
+  collection_address: MyText
+  title: MyString
+  description: MyString
+  template: 1
+
+two:
+  owner_address: MyString
+  collection_address: MyText
+  title: MyString
+  description: MyString
+  template: 1
