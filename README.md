@@ -1,7 +1,7 @@
 # NFT gated content
 Access-gating app that allows users to create content exclusively accessible by owners of specific NFTs. Imagine a world where owning a digital asset can grant you access to exclusive content, tailored just for you!
 
-# Important files to review
+# Files you'd like to review
 - models/pages.rb
 - lib/alchemy_api.rb
 - lib/ethereum_utils.rb
