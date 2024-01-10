@@ -1,24 +1,22 @@
-# README
+# NFT gated content
+Access-gating app that allows users to create content exclusively accessible by owners of specific NFTs. Imagine a world where owning a digital asset can grant you access to exclusive content, tailored just for you!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Important files to review
+- models/pages.rb
+- lib/alchemy_api.rb
+- lib/ethereum_utils.rb
+- controllers/pages_controller.rb
+- serializers/page_serializer.rb
 
-Things you may want to cover:
 
-* Ruby version
+# Run it
+You need:
+- Ruby 3.3.0
+- PostgreSQL running
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bin/bundle install
+bin/rails db:create
+bin/rails db:migrate
+bin/rails s
+```
